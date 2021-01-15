@@ -1,31 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
 * {
     margin: 0;
+    font-family: Merriweather, serif;
 }
 
 header {
     background-color: black;
     color: white;
-    font-family: serif;
+    font-family: Merriweather, serif;
     text-transform: uppercase;
     text-align: center;
     padding: 30px;
 }
 
-body {
-    text-align: center; 
+.banner {
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 form{
-    width: 80%;
+    width: 90%;
 }
 
 fieldset {
     border: none;
     border-top: 2px solid black;
 }
+
 .container {
     display: flex;
 }
+
 .flexbox{
     display: flex;
     flex-direction: column;
@@ -35,13 +41,22 @@ fieldset {
     width: 50%;
 }
 
+input{
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(240, 238, 238);
+    border: none;
+    text-align: right;
+}
+
+input:focus {
+    text-align: left;
+}
+
 input[type="submit"] {
     display: inline-block;
     margin: 0 auto;
-}
-
-input{
-    background-color: pink;
 }
 
 input:focus {
