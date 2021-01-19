@@ -2,13 +2,15 @@
 
 * {
     margin: 0;
+    padding: 0;
     font-family: Merriweather, serif;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: black;
+    background-color: rgb(36, 36, 36);
     color: white;
-    font-family: Merriweather, serif;
+    font-size: 1.3em;
     text-transform: uppercase;
     text-align: center;
     padding: 30px;
@@ -20,45 +22,88 @@ header {
 }
 
 form{
-    width: 90%;
+    color: rgb(117, 117, 117);
+}
+
+.line1 {
+    border-top: 5px solid black;
+    padding-bottom: 5px;
+}
+
+.line2 {
+    border-top: 2px solid black;
+}
+
+.line1,
+.line2 {
+    margin: 0 20px;
 }
 
 fieldset {
     border: none;
-    border-top: 2px solid black;
+    margin: 20px;
 }
 
-.container {
-    display: flex;
-}
-
-.flexbox{
+.flexbox {
     display: flex;
     flex-direction: column;
 }
 
 .zip {
-    width: 50%;
+    width: 40%;
 }
 
 input{
     margin-top: 15px;
+    margin-left: 0;
     padding: 15px;
     border-radius: 5px;
     background-color: rgb(240, 238, 238);
     border: none;
-    text-align: right;
-}
-
-input:focus {
-    text-align: left;
 }
 
 input[type="submit"] {
+    background-color: #3cbbb5;
+    color: white;
+    line-height: 2.5;
+    padding: 10px 0;
+    font-size: 25px;
     display: inline-block;
-    margin: 0 auto;
+    margin: 20px;
+    font-weight: 700;
 }
 
-input:focus {
-    background-color: red;
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 23px;
+    color: black;
+}
+
+.banner h1 {
+    padding-top: 1.5em;
+}
+
+.banner p {
+    text-align: center;
+    color: rgb(177, 174, 174);
+    padding: .75em 1em 1.5em 1em;
+    font-size: 1.15em;
+}
+
+form h1 {
+    padding-top: .5em;
+    padding-bottom: 1.5em;
+}
+
+/*-------------media query---------------------*/
+
+@media (min-width: 768px) {
+    
+
+
 }

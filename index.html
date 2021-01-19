@@ -11,14 +11,19 @@
             <h3>The Code Review</h3>
         </header>
         
-        <div class="banner">
+        <div class="banner flexbox">
             <h1>Signup for our newsletter</h1>
             <p>Get the latest on how your code is doing right in your inbox</p>
         </div>
 
         <main class="container">
             <form class="flexbox"> 
+
+                <div class="line1"></div>
+                <div class="line2"></div>
+
                 <fieldset>
+
                     <legend><h1>Contact Information</h1></legend>
                     
                     <div class="flexbox"> 
@@ -110,6 +115,8 @@
                     </div>    
                 </fieldset>
 
+                <div class="line2"></div>
+
                 <fieldset>
                     <legend><h1>Newsletter</h1></legend>
 
@@ -124,7 +131,7 @@
                     <input type="checkbox" id="js-news" name="javascript-news">
                     <label for="js-news">Javascript News</label><br>
 
-                    <p>Newsletter format</p>
+                    <p class="news">Newsletter format</p>
 
                     <input type="radio" id="html-radio" name="newsletter-format">
                     <label for="html-radio">HTML</label><br>
