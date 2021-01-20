@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 header {
     background-color: rgb(36, 36, 36);
     color: white;
@@ -66,7 +67,7 @@ input{
 }
 
 input[type="submit"] {
-    background-color: #3cbbb5;
+    background-color: #e7a440;
     color: white;
     line-height: 2.5;
     padding: 10px 0;
@@ -84,6 +85,7 @@ input[type="radio"] {
 
 select {
     padding: 10px;
+);
 }
 
 h1 {
@@ -107,9 +109,10 @@ input#email::placeholder {
     padding-right: 10px;
 }
 
+textarea:focus,
 input:focus {
     transition: background-color 0.3s ease;
-    background-color:  rgb(216, 216, 216);
+    background-color:  rgb(214, 214, 214);
 }
 .banner p {
     text-align: center;
@@ -180,11 +183,10 @@ footer {
 
     .label {
         float: left;
-        margin: 15px;
+        margin-top: 15px;
     }
 
     .clearfix {
         overflow: auto;
     }
-
 }
