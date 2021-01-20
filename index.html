@@ -28,27 +28,27 @@
                     
                     <div class="flexbox clearfix"> 
                         <label for="name" class="label">Full Name</label>
-                        <input type="text" id="name" name="user_name" placeholder="Required" ><br>
+                        <input required type="text" id="name" name="user_name" placeholder="Required"><br>
                     </div>
 
                     <div class="flexbox clearfix"> 
                         <label for="email" class="label">Email Address</label>
-                        <input type="email" id="email" name="user_email" placeholder="Required"><br>
+                        <input required type="email" id="email" name="user_email" placeholder="Required"><br>
                     </div>
 
                     <div class="flexbox clearfix"> 
                         <label for="number" class="label">Phone Number</label>
-                        <input type="tel" id="number" name="user_phone_number"><br>
+                        <input type="tel" id="number" name="user_phone_number" placeholder="Optional"><br>
                     </div>
 
                     <div class="flexbox clearfix"> 
                         <label for="address" class="label">Street Address</label>
-                        <input type="type" id="address" name="user_street_address"><br>
+                        <input type="type" id="address" name="user_street_address" placeholder="Optional"><br>
                     </div>
                     
                     <div class="flexbox clearfix"> 
                         <label for="city" class="label">City</label>
-                        <input type="type" id="city" name="user_city"><br>
+                        <input type="type" id="city" name="user_city" placeholder="Optional"><br>
                     </div>
 
                     <div class="flexbox clearfix"> 
@@ -111,7 +111,7 @@
 
                     <div class="flexbox clearfix"> 
                         <label for="zip" class="label">Zip Code</label>
-                        <input class="zip" type="type" id="zip" name="user_zip_code">
+                        <input type="type" id="zip" name="user_zip_code" placeholder="Optional">
                     </div>    
                 </fieldset>
 
@@ -120,7 +120,7 @@
                 <fieldset>
                     <legend><h1>Newsletter</h1></legend>
 
-                    <p>Select the newsletters you would like to receive</p>
+                    <p class="newsletters">Select the newsletters you would like to receive</p>
 
                     <input type="checkbox" id="html-news" name="html-news">
                     <label for="html-news">HTML News</label><br>

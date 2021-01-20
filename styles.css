@@ -50,8 +50,9 @@ fieldset {
     margin: 0;
 }
 
-.zip {
+#zip {
     width: 40%;
+    margin-right: 35%;
 }
 
 .text textarea,
@@ -94,6 +95,10 @@ h1 {
     padding-top: 1.5em;
 }
 
+input#number::placeholder, 
+input#address::placeholder, 
+input#city::placeholder,
+input#zip::placeholder, 
 input#name::placeholder,
 input#email::placeholder {
     text-align: end;
@@ -102,6 +107,10 @@ input#email::placeholder {
     padding-right: 10px;
 }
 
+input:focus {
+    transition: background-color 0.3s ease;
+    background-color:  rgb(216, 216, 216);
+}
 .banner p {
     text-align: center;
     color: rgb(177, 174, 174);
@@ -114,10 +123,13 @@ form h1 {
     padding-bottom: 1.5em;
 }
 
-.news {
-    margin: 20px 20px 5px 0px;
-}
 
+.news {
+    margin: 25px 20px 11px 0px;
+}
+.newsletters{
+    margin: 0 20px 11px 0;
+}
 .text textarea,
 .text {
     margin: 20px 0 0 0;
@@ -133,44 +145,43 @@ footer {
     text-align: center;
     color: rgb(196, 194, 194);
     font-style: italic;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 150px;
 }
+
 /*-------------media query---------------------*/
 
 @media (min-width: 768px) {
     
     main {
         max-width: 800px;
+        width: 100%;
         margin: auto;
+    }
+    form {
+        width: 100%;
     }
 
     .flexbox {
-        display:block;
+        display: block;
     }
 
     .contact select,
     .contact input {
         float: right;
         width: 75%;
-        margin: 0 0 15px 0;
-    }
-
-    #zip {
-        width: 30%;
-        float: right;
+        margin: 0 0 20px 0;
+        padding: 18px;
     }
 
     input[type="submit"]{
-        width: 70%;
-        padding: 0;
-        margin: 0 auto;
+        width: 95%;
     }
 
     .label {
         float: left;
+        margin: 15px;
     }
-
 
     .clearfix {
         overflow: auto;
